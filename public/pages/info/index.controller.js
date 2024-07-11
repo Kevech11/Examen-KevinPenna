@@ -1,4 +1,4 @@
-import { navbar } from '../../components/navbar.js'
+import { navbar } from ''
 const header = document.getElementById('header')
 header.innerHTML = navbar()
 
@@ -32,7 +32,7 @@ btn.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', async()=>{
    
-    const data; //Deberia ser un array de objetos con la informacion de las ciudades
+    //const data; //Deberia ser un array de objetos con la informacion de las ciudades
  
     city = data.find(city => city.id === selectedCity) //Este codigo puede variar dependiendo de como se obtenga la ciudad seleccionada
     totalP.textContent = `$${city.price}`
