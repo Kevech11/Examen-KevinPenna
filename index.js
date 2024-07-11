@@ -19,7 +19,7 @@ app.listen(port, () =>{
 })
 
 
-app.use(express.static('./public/pages/info')) //levantar nuestro FRON-END
+app.use(express.static('./public/pages/home')) //levantar nuestro FRON-END
 
 //Rutas de end-point
 app.use('/user', userRouter)

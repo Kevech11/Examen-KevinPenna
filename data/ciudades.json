@@ -1,0 +1,23 @@
+{
+    "1": {
+        "id": 1,
+        "city": "ruta/a/imagen2.jpg",
+        "img": "Producto 2",
+        "price": 29.99,
+        "desc": "barcelona....."
+    },
+    "2": {
+      "id": 2,
+      "city": "ruta/a/imagen2.jpg",
+      "img": "Producto 2",
+      "price": 29.99,
+      "desc": "madrid....."
+    },
+    "3": {
+        "id": 3,
+        "city": "ruta/a/imagen2.jpg",
+        "img": "Producto 2",
+        "price": 29.99,
+        "desc": "sevilla....."
+    }
+  }
