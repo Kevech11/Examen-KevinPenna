@@ -1,19 +1,29 @@
-//Importo librerias
+//Importo 
 import express from 'express' 
-import cors from 'cors'
+import userRouter from './routes/user.routes.js'
+
+
 
 //Crear instancia
 const app = express()
 
 //Configurar Puerto
-const port = 3000
+const port = 3005
+
+//autorizar uso de JSON
+app.use(express.json());
 
 //levanto el servidor
 app.listen(port, () =>{
     console.log(`Servidor levantado en el puerto ${port}`)
 })
 
-//Definicion de rutas
-app.get('/', (req, res)=>{
-    res.send('Hola Mundo!')
-})
+
+app.use(express.static('./pages/info')) //levantar nuestro FRON-END
+
+//Rutas de end-point
+app.use('/user', userRouter)
+
+
+   
+

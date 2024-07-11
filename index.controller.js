@@ -6,6 +6,12 @@ header.innerHTML = navbar()
 document.addEventListener('DOMContentLoaded', async()=>{
   
     const data; //Deberia ser un array de objetos con la informacion de las ciudades
+
+    /*
+    
+    
+    */
+
     cardContainer.innerHTML = ''
 
     data.forEach((place) => {

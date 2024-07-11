@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Karen",
+        "username": "KarenLast",
+        "lastname": "Miller",
+        "pass":"pass1",
+        "salary": 95000
+    },
+    {
+        "name": "kevin",
+        "username": "Kevech",
+        "lastname": "Miller",
+        "pass":"pass2",
+        "salary": 295000
+    },
+    {
+        "name": "Marcos",
+        "username": "MarcosPF",
+        "lastname": "Lucero",
+        "pass":"pass3",
+        "salary": 195000
+     }
+    
+]
