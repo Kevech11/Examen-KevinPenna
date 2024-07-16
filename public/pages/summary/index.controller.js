@@ -1,6 +1,8 @@
 import { navbar } from "../../components/navbar.js"
 const btnCancel = document.getElementById('btnCancel')
 
+
+
 document.addEventListener('DOMContentLoaded', async()=>{
     const summary = JSON.parse(localStorage.getItem('summary'))
     const header = document.getElementById('header')

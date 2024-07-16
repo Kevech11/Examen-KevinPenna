@@ -2,8 +2,6 @@
 import express from 'express' 
 import userRouter from './routes/user.routes.js'
 
-
-
 //Crear instancia
 const app = express()
 
@@ -18,8 +16,10 @@ app.listen(port, () =>{
     console.log(`Servidor levantado en el puerto ${port}`)
 })
 
-
-app.use(express.static('./public/pages/home')) //levantar nuestro FRON-END
+//levantar nuestro FRON-END
+app.use(express.static('./public/pages/home')) 
+app.use(express.static('./public/pages/info'))
+app.use(express.static('./public/pages/summary'))
 
 //Rutas de end-point
 app.use('/user', userRouter)

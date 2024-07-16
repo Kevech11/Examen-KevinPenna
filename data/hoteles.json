@@ -1,14 +1,14 @@
 {
     "1": {
         "id": 1,
-        "tittle": "Real madrid"
+        "name": "Mandarin Oriental Ritz, Madrid"
     },
     "2": {
         "id": 2,
-        "tittle":"San pedro"
+        "name":"Palacio Santa Clara"
     },
     "3": {
         "id": 3,
-       "tittle":"Barcelona"
+        "name":"Hotel Arts Barcelona"
     }
   }
