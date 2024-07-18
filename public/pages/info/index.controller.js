@@ -33,7 +33,44 @@ btn.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', async()=>{
    
     //const data; //Deberia ser un array de objetos con la informacion de las ciudades
- 
+     const url = "./hoteles/hoteles";
+     fetch(url, {
+        method: 'POST', // Método HTTP (GET, POST, etc.)
+        headers: {
+          'Content-Type': 'application/json', // Tipo de contenido
+          'Authorization': 'Bearer your_token_here' // Cabecera de autorización si es necesario
+        },
+        body: JSON.stringify ({
+         
+        }),
+        mode: 'cors', // Modo de solicitud (cors, no-cors, same-origin)
+        cache: 'no-cache', // Control de caché (default, no-store, reload, etc.)
+        credentials: 'same-origin', // Tipo de credenciales (omit, same-origin, include)
+        redirect: 'follow', // Control de redireccionamiento (follow, error, manual)
+        referrerPolicy: 'no-referrer' // Política de referente (no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin)
+      })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json(); // Procesar la respuesta como JSON
+        })
+        .then(data => {
+          console.log(data);
+                 // Hacer algo con los datos recibidos
+          for(let key in data){
+            if(Object.prototype.hasOwnProperty.call(data,key)){
+                const item = data[key];
+                console.log(`ID: ${item.id}, Name: ${item.name}`);
+                $('#hotel').append(`<option> ${item.name}</option>`)
+            }
+          }
+        })
+
+        .catch(error => {
+          console.error('Fetch error:', error); // Manejar errores de la solicitud
+        });
+
     city = data.find(city => city.id === selectedCity) //Este codigo puede variar dependiendo de como se obtenga la ciudad seleccionada
     totalP.textContent = `$${city.price}`
     document.getElementById('title').textContent = `Calcula tu viaje a ${city.city}`
@@ -42,9 +79,7 @@ document.addEventListener('DOMContentLoaded', async()=>{
 
     let hotels = ``
 
-    city.hotels.forEach(hotel => {
-        hotels += `<option>${hotel.name}</option>`
-    })
+    
 
     hotelSelect.innerHTML = hotels
 })

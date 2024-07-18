@@ -8,7 +8,7 @@ const fileUsers = await readFile ('./data/users.json' , 'utf-8') //leo el json
 const userData = JSON.parse(fileUsers)
 
 router.post('/login',(req,res)=>{
-    const userName = req.body.userName
+    const userName = req.body.username
     const pass = req.body.pass
 
     const result = userData.find(e => e.username === userName && e.pass === pass) 
@@ -17,7 +17,7 @@ router.post('/login',(req,res)=>{
         const data = {
             name: result.name,            
             lastName: result.lastname,
-            userName: result.username,
+            username: result.username,
             status: true
         }
         res.status(200).json(data)
