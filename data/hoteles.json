@@ -10,5 +10,29 @@
     "3": {
         "id": 3,
         "name":"Hotel Arts Barcelona"
+    },
+    "4": {
+        "id": 4,
+        "name":"Nobis Hotel Palma"
+    },
+    "5": {
+        "id": 5,
+        "name":"Triana House Boutique"
+    },
+    "6": {
+        "id": 6,
+        "name":"Hotel Cesar Lanzarote"
+    },
+    "7": {
+        "id": 7,
+        "name":"Palacio de Luces"
+    },
+    "8": {
+        "id": 8,
+        "name":"Canfranc Estación"
+    },
+    "9": {
+        "id": 9,
+        "name":"Asia Gardens"
     }
   }

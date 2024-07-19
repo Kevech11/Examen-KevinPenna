@@ -23,6 +23,8 @@ app.listen(port, () =>{
 });
 
 //levantar nuestro FRON-END
+app.use(express.static('./public')) 
+
 app.get('/home', (req, res)=>{
     res.sendFile(path.join(__dirname,'public','pages','home','index.html'));
 });
@@ -35,7 +37,7 @@ app.get('/summary', (req, res)=>{
     res.sendFile(path.join(__dirname,'public','pages','summary','index.html'));
 });
 
-app.use(express.static('./public')) 
+
 
 //Rutas de end-point
 app.use('/user', userRouter)
