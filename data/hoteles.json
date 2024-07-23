@@ -1,38 +1,47 @@
 {
     "1": {
         "id": 1,
-        "name": "Mandarin Oriental Ritz, Madrid"
+        "name": "Mandarin Oriental Ritz, Madrid",
+        "id_ciudad": 1
     },
     "2": {
         "id": 2,
-        "name":"Palacio Santa Clara"
+        "name":"Palacio Santa Clara",
+        "id_ciudad": 3
     },
     "3": {
         "id": 3,
-        "name":"Hotel Arts Barcelona"
+        "name":"Hotel Arts Barcelona",
+        "id_ciudad": 2
     },
     "4": {
         "id": 4,
-        "name":"Nobis Hotel Palma"
+        "name":"Nobis Hotel Palma",
+        "id_ciudad": 1
     },
     "5": {
         "id": 5,
-        "name":"Triana House Boutique"
+        "name":"Triana House Boutique",
+        "id_ciudad": 3
     },
     "6": {
         "id": 6,
-        "name":"Hotel Cesar Lanzarote"
+        "name":"Hotel Cesar Lanzarote",
+        "id_ciudad": 2
     },
     "7": {
         "id": 7,
-        "name":"Palacio de Luces"
+        "name":"Palacio de Luces",
+        "id_ciudad": 2
     },
     "8": {
         "id": 8,
-        "name":"Canfranc Estación"
+        "name":"Canfranc Estación",
+        "id_ciudad": 1
     },
     "9": {
         "id": 9,
-        "name":"Asia Gardens"
+        "name":"Asia Gardens",
+        "id_ciudad": 3
     }
   }

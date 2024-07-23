@@ -38,8 +38,6 @@ app.get('/summary', (req, res)=>{
     res.sendFile(path.join(__dirname,'public','pages','summary','index.html'));
 });
 
-
-
 //Rutas de end-point
 app.use('/user', userRouter)
 app.use('/hoteles', hotelesRouter)

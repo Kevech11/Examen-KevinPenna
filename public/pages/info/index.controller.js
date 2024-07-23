@@ -1,5 +1,4 @@
 import { navbar } from '../../components/navbar.js'
-// import { card } from '../../components/card.js'
 const header = document.getElementById('header')
 header.innerHTML = navbar()
 
@@ -10,6 +9,7 @@ const inputCant = document.getElementById('cant')
 const inputDays = document.getElementById('days')
 const selectedCity = JSON.parse(localStorage.getItem('selectedCity'))
 let city = []
+
 const getTotal = () => {
   const cant = inputCant.value
   const days = inputDays.value
@@ -30,10 +30,7 @@ btn.addEventListener('click', () => {
   window.location.href = '../summary'
 })
 
-
 document.addEventListener('DOMContentLoaded', async () => {
-
-
   const url = "./hoteles/hoteles";
   fetch(url, {
     method: 'POST',
@@ -69,6 +66,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     .catch(error => {
       console.error('Fetch error:', error); // Manejar errores de la solicitud
     });
+
 
   city = data.find(city => city.id === selectedCity) //Este codigo puede variar dependiendo de como se obtenga la ciudad seleccionada
   totalP.textContent = `$${city.price}`
