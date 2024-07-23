@@ -1,4 +1,5 @@
 import { navbar } from '../../components/navbar.js'
+// import { card } from '../../components/card.js'
 const header = document.getElementById('header')
 header.innerHTML = navbar()
 
@@ -29,9 +30,10 @@ btn.addEventListener('click', () => {
   window.location.href = '../summary'
 })
 
+
 document.addEventListener('DOMContentLoaded', async () => {
 
-  //const data; //Deberia ser un array de objetos con la informacion de las ciudades
+
   const url = "./hoteles/hoteles";
   fetch(url, {
     method: 'POST',
@@ -75,7 +77,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('desc').textContent = city.desc
 
   let hotels = ``
-
   hotelSelect.innerHTML = hotels
 })
 
@@ -90,3 +91,67 @@ inputDays.addEventListener('input', () => {
 hotelSelect.addEventListener('change', () => {
   getTotal()
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   fetch("./data/ciudades.json")
+//       .then(response => response.json())
+//       .then(data => {
+//           const app = document.getElementById("app");
+//           data.forEach(city => {
+//               app.innerHTML += card({ name: city.city, description: city.desc });
+//           });
+//       });
+// });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const urlParams = new URLSearchParams(window.location.search);
+//   const cityName = urlParams.get('city');
+
+//   if (cityName) {
+//       fetch("./data/ciudades.json")
+//           .then(response => response.json())
+//           .then(data => {
+//               const city = data.find(city => city.city === cityName);
+//               if (city) {
+//                   document.getElementById("city-name").innerText = city.city;
+//                   document.getElementById("city-description").innerText = city.desc;
+                  
+//               }
+//           });
+//   }
+// });

@@ -2,22 +2,22 @@
     "1": {
         "id": 1,
         "city": "Madrid",
-        "img": "",
-        "price": "2.100.000",
+        "img": "./img/madrid.jpg",
+        "price": "1.145.000",
         "desc": "Descubre Madrid, una ciudad llena de vida, cultura y belleza. Desde la majestuosidad del Palacio Real hasta la animada Puerta del Sol, Madrid ofrece una mezcla perfecta de historia y modernidad. Pasea por el Parque del Retiro, admira obras maestras en el Museo del Prado y disfruta de la vibrante vida nocturna. ¡Madrid te espera con los brazos abiertos para vivir una experiencia inolvidable!"
     },
     "2": {
       "id": 2,
       "city": "Barcelona",
-      "img": "",
-      "price": "1.780.000",
+      "img": "./img/barcelona.jpg",
+      "price": "1.280.000",
       "desc": "Explora Barcelona, una ciudad donde la arquitectura de Gaudí se encuentra con el vibrante espíritu mediterráneo. Admira la impresionante Sagrada Familia, pasea por las coloridas Ramblas y relájate en las playas doradas. Sumérgete en la cultura catalana visitando el Barrio Gótico y disfruta de la deliciosa gastronomía local. ¡Barcelona es el destino perfecto para una aventura inolvidable!"
     },
     "3": {
         "id": 3,
         "city": "Valencia",
-        "img": "",
-        "price": "1.500.000",
+        "img": "./img/valencia.jpg",
+        "price": "1.350.000",
         "desc": "Descubre Valencia, donde la tradición se encuentra con la innovación. Pasea por la Ciudad de las Artes y las Ciencias, relájate en las playas del Mediterráneo y disfruta del encanto del casco antiguo. Saborea la auténtica paella valenciana y explora los jardines del Turia. ¡Valencia te ofrece una combinación perfecta de cultura, gastronomía y belleza natural para una experiencia inolvidable!"
     }
   }

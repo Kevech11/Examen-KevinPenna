@@ -2,6 +2,7 @@
 import express from 'express' 
 import userRouter from './routes/user.routes.js'
 import hotelesRouter from './routes/hoteles.routes.js'
+import ciudadesRouter from './routes/ciudades.routes.js'
 import path from 'path'
 import { fileURLToPath } from 'url'
 const __filename = fileURLToPath (import.meta.url)
@@ -42,6 +43,7 @@ app.get('/summary', (req, res)=>{
 //Rutas de end-point
 app.use('/user', userRouter)
 app.use('/hoteles', hotelesRouter)
+app.use('/ciudades', ciudadesRouter)
 
 
    
