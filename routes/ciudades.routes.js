@@ -7,8 +7,7 @@ const fileUsers = await readFile ('./data/ciudades.json' , 'utf-8') //leo el jso
 
 const userData = JSON.parse(fileUsers)
 
-router.post('/ciudades',(req,res)=>{
-    
+router.post('/ciudades',(req,res)=>{ 
     res.status(200).json(userData)
 })
 export  default router

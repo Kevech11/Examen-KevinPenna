@@ -12,10 +12,17 @@ document.addEventListener('DOMContentLoaded', async()=>{
     document.getElementById('cant').value = summary.cant
     document.getElementById('days').value = summary.days
     document.getElementById('total').value = summary.total
+
 })
 
-btnCancel.addEventListener('click', () => {
-    localStorage.removeItem('summary')
-    window.location.href = './home'
-})
 
+btnCancel.addEventListener('click', () => {  
+    const inputs = document.querySelectorAll('input, textarea, select');
+    inputs.forEach(input => input.value = '');   
+    localStorage.removeItem('summary');    
+    const redirectMessage = document.getElementById('redirect-message');
+    redirectMessage.style.display = 'block'; 
+    setTimeout(() => {
+        window.location.href = './home';
+    }, 2000); 
+});

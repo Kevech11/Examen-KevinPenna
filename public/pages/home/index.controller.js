@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                     localStorage.setItem('info', JSON.stringify(data))
 
                 })
-
             })
         })
         .catch(error => {
