@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
-      return response.json(); // Procesar la respuesta como JSON
+      return response.json(); 
     })
     .then(data => {
       console.log(data);
