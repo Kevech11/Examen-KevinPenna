@@ -34,15 +34,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             for (let key in data) {
                 if (Object.prototype.hasOwnProperty.call(data, key)) {
                     const item = data[key];
-                    //   console.log(`ID: ${item.id}, Name: ${item.name}`);
-                    //   $('#hotel').append(`<option> ${item.name}</option>`)
                     cardContainer.innerHTML += card(item.city, item.desc, item.price, item.id, item.img);
                     document.getElementById(item.id).href = './info';
                     document.getElementById(item.id).addEventListener('click', (e) => {
-                        const data = {
+                        const data = { //sacar city y poner d minuscula
                             city: item.city,
                             img: item.img,
                             desc: item.desc
+
                         }
                         localStorage.setItem('info', JSON.stringify(data));
                     })
@@ -68,13 +67,4 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
 })
 
-// for (const ciudad in obj) {
-//     console.log(`${ciudad}: ${obj[ciudad].forEach(item => {
-//         console.log(`${item.city}`);
-//         cardContainer.innerHTML += card(item.city, item.desc, item.price, item.id, item.img);
-//     })}`);
-// }
 
-// obj.forEach((place) => {
-//     cardContainer.innerHTML += card(place.city, place.desc, place.price, place.id, place.img)
-// })

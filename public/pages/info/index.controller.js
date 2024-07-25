@@ -68,8 +68,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       console.error('Fetch error:', error); // Manejar errores de la solicitud
     });
 
-
-  city = data.find(city => city.id === selectedCity) //Este codigo puede variar dependiendo de como se obtenga la ciudad seleccionada
+  city = data.find(city => city.id === selectedCity) 
   totalP.textContent = `$${city.price}`
   document.getElementById('title').textContent = `Calcula tu viaje a ${city.city}`
   document.getElementById('img').src = city.img
