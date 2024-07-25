@@ -13,9 +13,10 @@ document.addEventListener('DOMContentLoaded', async()=>{
     document.getElementById('days').value = summary.days
     document.getElementById('total').value = summary.total
 
-    // const summaryArray = JSON.parse(localStorage.getItem('summaries')) || [];
-    // summaryArray.push(summary);
-    // localStorage.setItem('summaries', JSON.stringify(summaryArray));
+    
+    const summaryArray = JSON.parse(localStorage.getItem('summaries')) || [];
+    summaryArray.push(summary);
+    localStorage.setItem('summaries', JSON.stringify(summaryArray));
 
 })
 

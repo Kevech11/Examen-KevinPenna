@@ -10,6 +10,7 @@ const inputDays = document.getElementById('days')
 const selectedCity = JSON.parse(localStorage.getItem('selectedCity'))
 let city = []
 
+
 const getTotal = () => {
   const cant = inputCant.value
   const days = inputDays.value

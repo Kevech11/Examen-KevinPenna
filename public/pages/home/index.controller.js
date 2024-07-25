@@ -4,6 +4,8 @@ const cardContainer = document.getElementById('cardContainer')
 const header = document.getElementById('header')
 header.innerHTML = navbar()
 
+
+
 document.addEventListener('DOMContentLoaded', async () => {
     const url = "./ciudades/ciudades";
     fetch(url, {

@@ -44,5 +44,4 @@ app.use('/hoteles', hotelesRouter)
 app.use('/ciudades', ciudadesRouter)
 
 
-   
 

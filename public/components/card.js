@@ -12,7 +12,7 @@ export const card =(title, desc, price, id, img)=>{
                 </div>
                 <p class="my-5">${desc}</p>
                 <div class="flex items-center justify-between gap-5">
-                    <button name="btnCity" id="${id}" data-city="${id}" class="bg-purple-100 p-2 rounded-xl text-purple-500 font-semibold hover:bg-purple-50 w-full text-center">Ver mas</button>
+                    <button name="btnCity" id="${id}" data-city="${id}"  class="bg-purple-100 p-2 rounded-xl text-purple-500 font-semibold hover:bg-purple-50 w-full text-center">Ver mas</button>
                 </div>
             </div>
         </div>
