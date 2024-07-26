@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       }
     })
     .catch(error => {
-      console.error('Fetch error:', error); // Manejar errores de la solicitud
+      console.error('Fetch error:', error); 
     });
 
   city = data.find(city => city.id === selectedCity) 
@@ -73,8 +73,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('img').src = city.img
   document.getElementById('desc').textContent = city.desc
 
-  let hotels = ``
-  hotelSelect.innerHTML = hotels
+  // let hotels = ``
+  // hotelSelect.innerHTML = hotels
 })
 
 inputCant.addEventListener('input', () => {
