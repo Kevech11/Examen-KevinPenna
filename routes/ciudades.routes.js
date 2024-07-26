@@ -10,8 +10,8 @@ const userData = JSON.parse(fileUsers)
 router.post('/ciudades',(req,res)=>{ 
     res.status(200).json(userData)
 })
-export  default router
 
+//opcion
 router.get('/ciudades', (req, res) => {
     const ciudadesPath = path.join(__dirname, '../data/ciudades.json');
     fs.readFile(ciudadesPath, 'utf8', (err, data) => {
@@ -23,3 +23,4 @@ router.get('/ciudades', (req, res) => {
         res.json(ciudades);
     });
 });
+export  default router
