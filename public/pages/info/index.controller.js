@@ -36,17 +36,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   fetch(url, {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json', // Tipo de contenido
-      'Authorization': 'Bearer your_token_here' // Cabecera de autorización si es necesario
+      'Content-Type': 'application/json', 
+      'Authorization': 'Bearer your_token_here'
     },
     body: JSON.stringify({
-      //consultar
     }),
-    mode: 'cors', // Modo de solicitud (cors, no-cors, same-origin)
-    cache: 'no-cache', // Control de caché (default, no-store, reload, etc.)
-    credentials: 'same-origin', // Tipo de credenciales (omit, same-origin, include)
-    redirect: 'follow', // Control de redireccionamiento (follow, error, manual)
-    referrerPolicy: 'no-referrer' // Política de referente (no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin)
+    mode: 'cors', 
+    cache: 'no-cache', 
+    credentials: 'same-origin', 
+    redirect: 'follow', 
+    referrerPolicy: 'no-referrer' 
   })
     .then(response => {
       if (!response.ok) {

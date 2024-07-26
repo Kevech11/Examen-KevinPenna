@@ -11,23 +11,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     fetch(url, {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json', // Tipo de contenido
-            'Authorization': 'Bearer your_token_here' // Cabecera de autorización si es necesario
+            'Content-Type': 'application/json', 
+            'Authorization': 'Bearer your_token_here' 
         },
-        body: JSON.stringify({
-            //consultar
+        body: JSON.stringify({          
         }),
-        mode: 'cors', // Modo de solicitud (cors, no-cors, same-origin)
-        cache: 'no-cache', // Control de caché (default, no-store, reload, etc.)
-        credentials: 'same-origin', // Tipo de credenciales (omit, same-origin, include)
-        redirect: 'follow', // Control de redireccionamiento (follow, error, manual)
-        referrerPolicy: 'no-referrer' // Política de referente (no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin)
+        mode: 'cors', 
+        cache: 'no-cache', 
+        credentials: 'same-origin', 
+        redirect: 'follow', 
+        referrerPolicy: 'no-referrer' 
     })
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            return response.json(); // Procesar la respuesta como JSON
+            return response.json(); 
         })
         .then(data => {
             console.log(data);
@@ -37,11 +36,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                     cardContainer.innerHTML += card(item.city, item.desc, item.price, item.id, item.img);
                     document.getElementById(item.id).href = './info';
                     document.getElementById(item.id).addEventListener('click', (e) => {
-                        const data = { //sacar city y poner d minuscula
+                        const data = { 
                             city: item.city,
                             img: item.img,
                             desc: item.desc
-
                         }
                         localStorage.setItem('info', JSON.stringify(data));
                     })
@@ -58,7 +56,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                     }
                     localStorage.setItem('info', JSON.stringify(data))
-
                 })
             })
         })
